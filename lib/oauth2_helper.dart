@@ -89,6 +89,13 @@ class OAuth2Helper {
     }
 
     if (!tknResp.isValid()) {
+      print(tknResp.errorUri);
+      print(tknResp.errorUri);
+      print(tknResp.errorUri);
+      print(tknResp.expiresIn);
+      print(tknResp.refreshToken);
+      print(tknResp.scope);
+      print(tknResp.expirationDate);
       throw Exception(
           'Provider error ${tknResp.httpStatusCode}: ${tknResp.error}: ${tknResp.errorDescription}');
     }
